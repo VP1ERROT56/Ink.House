@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOUSE</title>
+    <link rel="icon" href="source/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="source/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script defer src="source/js/main.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container_header">
+            <div class="navbar">
+                <div class="white">
+                    <div class="nav-logo">
+                        <img src="source/img/nav-logo.svg" alt="Лого">
+                    </div>
+                </div>
+                <div class="bgc">
+                    <div class="btn_menu">
+                        <div class="nav-list">
+                            <div class="menu">
+                                <button class="header__burger-btn" id="burgers">
+                                    <span class="burger"></span>
+                                    <span class="burger"></span>
+                                    <span class="burger"></span>
+                                </button>
+                                <ul class="menu-list">
+                                    <li class="list">
+                                        <a href="#nav_catalog_id" class="link-list">Репродукции</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="#promo_id" class="link-list">Новинки</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="#teamate_id" class="link-list">О нас</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="" class="link-list bye"><img src="source/img/bye.svg" alt="Купить"></a>
+                                    </li>
+                                </ul>
+                                <div class="btn_bye">
+                                    <a href="" class="link-list "><img class="bye_link" src="source/img/bye.svg"
+                                            alt="Купить"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="catalog__card">
+        <div class="container_card">
+            <div class="berd">
+                <img class="berd_img" src="source/img/Berd.webp" alt="Птица">
+            </div>
+            <div class="text_berd">
+                <div class="center">
+                    <h1 class="ink_house">
+                        Реплики картин от
+                        <span class="ink">
+                            Ink. House
+                        </span>
+                    </h1>
+                    <p class="opisanie">
+                        Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные
+                        цены.
+                    </p>
+                    <form action="#" method="get">
+                        <button class="product">
+                            Продукция
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container_catalog">
+            <div class="nav_catalog" id="nav_catalog_id">
+                <h3 class="repr">
+                    Репродукции
+                </h3>
+                <div class="btn_list">
+                    <ul class="btn_city">
+                        <li class="city">
+                            <a class="active button" onclick="showCategory('frans')" id="fransBtn" href="">
+                                Франция
+                            </a>
+                        </li>
+                        <li class="city">
+                            <a class="button" onclick="showCategory('german')" id="germanBtn" href="">
+                                Германия
+                            </a>
+                        </li>
+                        <li class="city">
+                            <a class="button" onclick="showCategory('anglia')" id="angliaBtn" href="">
+                                Англия
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cards" id="cardsContainer">
+
+            <!--frans-->
+
+            <div class="card" data-category="frans">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina1.png" alt="Охота Амура">
+                    </div>
+                    <h4 class="autor">
+                        Марсель Руссо
+                    </h4>
+                    <h3 class="title">
+                        Охота Амура
+                    </h3>
+                    <h4 class="text">
+                        Холст, масло (50х80)
+                    </h4>
+                    <h4 class="prise">
+                        14 500 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="frans">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina2.png" alt="Дама с собачкой">
+                    </div>
+                    <h4 class="autor">
+                        Анри Селин
+                    </h4>
+                    <h3 class="title">
+                        Дама с собачкой
+                    </h3>
+                    <h4 class="text">
+                        Акрил, бумага (50х80)
+                    </h4>
+                    <h4 class="prise">
+                        16 500 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="frans">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina3.png" alt=" Процедура">
+                    </div>
+                    <h4 class="autor">
+                        Франсуа Дюпон
+                    </h4>
+                    <h3 class="title">
+                        Процедура
+                    </h3>
+                    <h4 class="text">
+                        Цветная литография (40х60)
+                    </h4>
+                    <h4 class="prise">
+                        20 000 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="frans">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina4.png" alt="Роза">
+                    </div>
+                    <h4 class="autor">
+                        Луи Детуш
+                    </h4>
+                    <h3 class="title">
+                        Роза
+                    </h3>
+                    <h4 class="text">
+                        Бумага, акрил (50х80)
+                    </h4>
+                    <h4 class="prise">
+                        12 000 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card" data-category="frans">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina5.png" alt="Птичья трапеза">
+                    </div>
+                    <h4 class="autor">
+                        Франсуа Дюпон
+                    </h4>
+                    <h3 class="title">
+                        Птичья трапеза
+                    </h3>
+                    <h4 class="text">
+                        Цветная литография (40х60)
+                    </h4>
+                    <h4 class="prise">
+                        22 500 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card" data-category="frans">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina6.png" alt="Пейзаж с рыбой">
+                    </div>
+                    <h4 class="autor">
+                        Пьер Моранж
+                    </h4>
+                    <h3 class="title">
+                        Пейзаж с рыбой
+                    </h3>
+                    <h4 class="text">
+                        Цветная литография (40х60)
+                    </h4>
+                    <h4 class="prise">
+                        20 000 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!--german-->
+
+            <div class="card" data-category="german">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina7.png" alt="Над городом">
+                    </div>
+                    <h4 class="autor">
+                        Курт Вернер
+                    </h4>
+                    <h3 class="title">
+                        Над городом
+                    </h3>
+                    <h4 class="text">
+                        Цветная литография (40х60)
+                    </h4>
+                    <h4 class="prise">
+                        16 000 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="german">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina8.png" alt="Птенцы">
+                    </div>
+                    <h4 class="autor">
+                        Макс Рихтер
+                    </h4>
+                    <h3 class="title">
+                        Птенцы
+                    </h3>
+                    <h4 class="text">
+                        Холст, масло (50х80)
+                    </h4>
+                    <h4 class="prise">
+                        14 500 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="german">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina9.png" alt="Среди листьев">
+                    </div>
+                    <h4 class="autor">
+                        Мартин Майер
+                    </h4>
+                    <h3 class="title">
+                        Среди листьев
+                    </h3>
+                    <h4 class="text">
+                        Цветная литография (40х60)
+                    </h4>
+                    <h4 class="prise">
+                        20 000 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="german">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina10.png" alt="Яркая птица">
+                    </div>
+                    <h4 class="autor">
+                        Герман Беккер
+                    </h4>
+                    <h3 class="title">
+                        Яркая птица
+                    </h3>
+                    <h4 class="text">
+                        Цветная литография (40х60)
+                    </h4>
+                    <h4 class="prise">
+                        13 000 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="german">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina11.png" alt="Дятлы">
+                    </div>
+                    <h4 class="autor">
+                        Вульф Бауэр
+                    </h4>
+                    <h3 class="title">
+                        Дятлы
+                    </h3>
+                    <h4 class="text">
+                        Бумага, акрил (50х80)
+                    </h4>
+                    <h4 class="prise">
+                        20 000 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="german">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina12.png" alt="Большие воды">
+                    </div>
+                    <h4 class="autor">
+                        Вальтер Хартманн
+                    </h4>
+                    <h3 class="title">
+                        Большие воды
+                    </h3>
+                    <h4 class="text">
+                        Бумага, акрил (50х80)
+                    </h4>
+                    <h4 class="prise">
+                        23 000 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!--anglia-->
+
+            <div class="card" data-category="anglia">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina13.png" alt="Дикий зверь">
+                    </div>
+                    <h4 class="autor">
+                        Пол Смит
+                    </h4>
+                    <h3 class="title">
+                        Дикий зверь
+                    </h3>
+                    <h4 class="text">
+                        Акварель, бумага (50х80)
+                    </h4>
+                    <h4 class="prise">
+                        19 500 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="anglia">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina14.png" alt="Скалистый берег">
+                    </div>
+                    <h4 class="autor">
+                        Джон Уайт
+                    </h4>
+                    <h3 class="title">
+                        Скалистый берег
+                    </h3>
+                    <h4 class="text">
+                        Цветная литография (40х60)
+                    </h4>
+                    <h4 class="prise">
+                        17 500 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="anglia">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina15.png" alt="Река и горы">
+                    </div>
+                    <h4 class="autor">
+                        Джим Уотсон
+                    </h4>
+                    <h3 class="title">
+                        Река и горы
+                    </h3>
+                    <h4 class="text">
+                        Акварель, бумага (50х80)
+                    </h4>
+                    <h4 class="prise">
+                        20 500 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="anglia">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina16.png" alt="Белый попугайа">
+                    </div>
+                    <h4 class="autor">
+                        Юджин Зиллион
+                    </h4>
+                    <h3 class="title">
+                        Белый попугай
+                    </h3>
+                    <h4 class="text">
+                        Цветная литография (40х60)
+                    </h4>
+                    <h4 class="prise">
+                        15 500 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="anglia">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina17.png" alt="Ночная рыба">
+                    </div>
+                    <h4 class="autor">
+                        Эрик Гиллман
+                    </h4>
+                    <h3 class="title">
+                        Ночная рыба
+                    </h3>
+                    <h4 class="text">
+                        Бумага, акрил (50х80)
+                    </h4>
+                    <h4 class="prise">
+                        12 500 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card" data-category="anglia">
+                <div class="container">
+                    <div class="cartina">
+                        <img src="source/img/cartina18.png" alt="Рыжий кот">
+                    </div>
+                    <h4 class="autor">
+                        Альфред Барр
+                    </h4>
+                    <h3 class="title">
+                        Рыжий кот
+                    </h3>
+                    <h4 class="text">
+                        Цветная литография (40х60)
+                    </h4>
+                    <h4 class="prise">
+                        21 000 руб
+                    </h4>
+                    <form action="#" method="get">
+                        <button class="basket">
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promo" id="promo_id">
+        <div class="napolnenie">
+            <div class="container_promo">
+                <div class="title_promo">
+                    <img src="source/img/title_promo.png" alt="start">
+                    <h3 class="zagolovok_promo">Новая коллекция французских авторов</h3>
+                </div>
+                <p class="opis_promo  one">
+                    Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в
+                    свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.
+                </p>
+                <p class="opis_promo two">
+                    Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую
+                    востребованность направлений прогрессивного развития.
+                </p>
+            </div>
+            <div class="btn_promo_container">
+                <form action="#" method="get">
+                    <button class="btn_promo">
+                        Ознакомиться
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="teamate" id="teamate_id">
+        <div class="catalog_team">
+            <div class="painting">
+                <img src="source/img/painting.png" alt="painting">
+            </div>
+            <div class="team">
+                <h2 class="our_team">
+                    Наша команда
+                </h2>
+                <p class="opis_team">
+                    Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение
+                    экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того,
+                    что консультация с широким активом.
+                </p>
+                <div class="foto_team">
+                    <img src="source/img/team1.png" alt="" class="team1">
+                    <img src="source/img/team2.png" alt="" class="team2">
+                    <img src="source/img/team3.png" alt="" class="team3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer_ink">
+        <div class="catalog_footer">
+            <div class="footer_one">
+                <div class="logo_number">
+                    <img src="source/img/footer_logo.svg" alt="logo">
+                    <div class="number_opis">
+                        <a href="tel:+79995435454">+7 (999) 543-54-54</a>
+                        <p class="footer_text_number">Мастерская</p>
+                    </div>
+                </div>
+            </div>
+            <div class="realetive">
+                <div class="footer_two">
+                    <div class="footer_menu">
+                        <div class="reproduction">
+                            <h3 class="footer_title">
+                                Репродукции
+                            </h3>
+                            <a href="#" class="footer_text">Франция</a>
+                            <a href="#" class="footer_text">Германия</a>
+                            <a href="#" class="footer_text">Англия</a>
+                        </div>
+                        <div class="new">
+                            <h3 class="footer_title">
+                                Новинки
+                            </h3>
+                            <a href="#" class="footer_text">2021</a>
+                            <a href="#" class="footer_text">2020</a>
+                        </div>
+                        <div class="o_nas">
+                            <h3 class="footer_title">
+                                О нас
+                            </h3>
+                            <a href="#" class="footer_text">Художники</a>
+                            <a href="#" class="footer_text">Менеджеры</a>
+                        </div>
+                    </div>
+                    <div class="footer_line"></div>
+                    <div class="social_ceti">
+                        <div class="ceti">
+                            <a href="" class="social"><img src="source/img/facebook.svg" alt="facebook"></a>
+                            <a href="" class="social"><img src="source/img/istagram.svg" alt="instagram"></a>
+                            <a href="" class="social"><img src="source/img/youtube.svg" alt="youtube"></a>
+                        </div>
+                        <div class="footer_all_info">
+                            <p class="all_info info_one">Ink. House ®</p>
+                            <p class="all_info">All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
